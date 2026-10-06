@@ -6,7 +6,18 @@
 - We can't know what the input will be, so we plan for the slowest case.
 
 ```js
-const everyone = ["dory", "bruce", "marlin", "nemo", "gill", "bloat", "nigel", "squirt", "darla", "hank"];
+const everyone = [
+  "dory",
+  "bruce",
+  "marlin",
+  "nemo",
+  "gill",
+  "bloat",
+  "nigel",
+  "squirt",
+  "darla",
+  "hank",
+];
 
 function findNemo(array) {
   for (let i = 0; i < array.length; i++) {
@@ -42,16 +53,18 @@ The worst case still checks every item, so it is **O(n)**.
 
 ```js
 function printFirstItemThenFirstHalfThenSayHi100Times(items) {
-  console.log(items[0]);                            // O(1)
+  console.log(items[0]); // O(1)
 
   var middleIndex = Math.floor(items.length / 2);
   var index = 0;
-  while (index < middleIndex) {                     // O(n/2): half of the items
+  while (index < middleIndex) {
+    // O(n/2): half of the items
     console.log(items[index]);
     index++;
   }
 
-  for (var i = 0; i < 100; i++) {                   // O(100): always 100, whatever the input
+  for (var i = 0; i < 100; i++) {
+    // O(100): always 100, whatever the input
     console.log("hi");
   }
 }
@@ -66,7 +79,7 @@ A shop sends every customer an email, then a text message.
 ```js
 function notifyCustomers(customers) {
   customers.forEach((c) => sendEmail(c)); // O(n)
-  customers.forEach((c) => sendSMS(c));   // O(n)
+  customers.forEach((c) => sendSMS(c)); // O(n)
 }
 ```
 
@@ -99,7 +112,7 @@ The line is **steeper** than O(n), but it is still a **straight line**, so it is
 ```js
 function notifyCustomers(customers) {
   customers.forEach((c) => sendEmail(c)); // O(n)
-  customers.forEach((c) => sendSMS(c));   // O(n)
+  customers.forEach((c) => sendSMS(c)); // O(n)
 }
 ```
 
@@ -112,7 +125,7 @@ A shop emails all its customers, then sends a text message to all its staff.
 ```js
 function notifyEveryone(customers, staff) {
   customers.forEach((c) => sendEmail(c)); // O(a): a = number of customers
-  staff.forEach((s) => sendSMS(s));       // O(b): b = number of staff
+  staff.forEach((s) => sendSMS(s)); // O(b): b = number of staff
 }
 ```
 
@@ -141,8 +154,10 @@ The two loops go over **different** lists, so it is **O(a + b)**, not O(n).
 const letters = ["a", "b", "c", "d", "e"];
 
 function logAllPairs(array) {
-  for (let i = 0; i < array.length; i++) {     // O(n)
-    for (let j = 0; j < array.length; j++) {   // O(n) for each i
+  for (let i = 0; i < array.length; i++) {
+    // O(n)
+    for (let j = 0; j < array.length; j++) {
+      // O(n) for each i
       console.log(array[i], array[j]);
     }
   }
@@ -175,8 +190,10 @@ Example with different inputs: for every customer, show every product.
 
 ```js
 function showProducts(customers, products) {
-  customers.forEach((c) => {         // a = number of customers
-    products.forEach((p) => {        // b = number of products
+  customers.forEach((c) => {
+    // a = number of customers
+    products.forEach((p) => {
+      // b = number of products
       console.log(c, p);
     });
   });
@@ -196,9 +213,10 @@ Nested loops over **different** inputs: **O(a × b)**, not O(n²).
 
 ```js
 function printAllNumbersThenAllPairSums(numbers) {
-  numbers.forEach((n) => console.log(n));           // O(n)
+  numbers.forEach((n) => console.log(n)); // O(n)
 
-  numbers.forEach((a) => {                          // O(n²): loop inside a loop
+  numbers.forEach((a) => {
+    // O(n²): loop inside a loop
     numbers.forEach((b) => console.log(a + b));
   });
 }
@@ -211,23 +229,23 @@ printAllNumbersThenAllPairSums([1, 2, 3, 4, 5]);
 
 **Why the biggest part wins:** take O(x² + 3x + 1000 + x/2)
 
-| Part   | x = 5 | x = 500     |
-| ------ | ----- | ----------- |
-| x²     | 25    | **250,000** |
-| 3x     | 15    | 1,500       |
-| 1000   | 1,000 | 1,000       |
-| x/2    | 2.5   | 250         |
+| Part | x = 5 | x = 500     |
+| ---- | ----- | ----------- |
+| x²   | 25    | **250,000** |
+| 3x   | 15    | 1,500       |
+| 1000 | 1,000 | 1,000       |
+| x/2  | 2.5   | 250         |
 
 - When x is small, 1000 is the biggest part.
 - When x is big, **x²** is far bigger than everything else. Big O cares about big inputs, so the answer is **O(x²)**.
 
 **This explains the earlier answers**
 
-| Full count   | Simplified |
-| ------------ | ---------- |
-| O(3 + 4n)    | O(n)       |
-| O(4 + 7n)    | O(n)       |
-| O(n + n²)    | O(n²)      |
+| Full count | Simplified |
+| ---------- | ---------- |
+| O(3 + 4n)  | O(n)       |
+| O(4 + 7n)  | O(n)       |
+| O(n + n²)  | O(n²)      |
 
 **More loops inside loops**
 
@@ -264,22 +282,22 @@ See the full cheat sheet: [Cheat-Sheet.md](Cheat-Sheet.md)
 
 ## What Does This All Mean?
 
-- **Big O matters most for big inputs.** With small inputs (like 5 items), all the lines on the chart are close together, so the choice barely matters.
+- **Big O matters most for big inputs.** With small inputs (like 5 items), all the lines on the chart(Big O Complexity Charts) are close together, so the choice barely matters.
 - **Inputs grow.** A site with 100 users today may have 1,000,000 later. Write code that still works well when that happens, so you don't have to keep fixing it.
 - **Built-in methods have a Big O cost too.** Examples with JavaScript arrays:
 
-| Array task                          | Big O    |
-| ----------------------------------- | -------- |
-| Get an item by position (`arr[0]`)  | **O(1)** |
-| Search for an item                  | **O(n)** |
-| Add to the start (`unshift`)        | **O(n)** |
+| Array task                         | Big O    |
+| ---------------------------------- | -------- |
+| Get an item by position (`arr[0]`) | **O(1)** |
+| Search for an item                 | **O(n)** |
+| Add to the start (`unshift`)       | **O(n)** |
 
 (The data structures section explains why.)
 
 - **Data structures** = ways to store data (array, object, ...).
 - **Algorithms** = ways to use that data (functions).
 - Each data structure is fast at some tasks and slow at others. Big O helps you **pick the right one**.
-- Most interviews test this: *which data structure and algorithm is the best fit?*
+- Most interviews test this: _which data structure and algorithm is the best fit?_
 - Reference: [bigocheatsheet.com](https://www.bigocheatsheet.com/) shows the Big O of common data structures and sorting methods.
 
 > **Takeaway:** Big O helps you write code that **scales**, and helps you choose the right data structure and algorithm.
