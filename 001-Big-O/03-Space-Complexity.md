@@ -95,10 +95,11 @@ Imagine you work at Twitter. Your boss asks for a button that shows a user's **f
 
 If the tweets are kept in an array (oldest first, newest last):
 
+<!-- prettier-ignore -->
 ```js
 // Find 1st, Find Nth...
 const array = ["hi", "my", "teddy"];
-array[0]; // O(1) → 'hi' (oldest)
+array[0];                // O(1) → 'hi' (oldest)
 array[array.length - 1]; // O(1) → 'teddy' (newest)
 ```
 

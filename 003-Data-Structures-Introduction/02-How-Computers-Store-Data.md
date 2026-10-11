@@ -66,9 +66,10 @@ So an 8-bit system **can't** store 256. It's too big to fit.
 
 When a number is too big to fit, it's called **integer overflow**. You can see this in JavaScript (which stores numbers in 64 bits):
 
+<!-- prettier-ignore -->
 ```js
-Math.pow(5, 100); // 7.888609052210118e+69  (5 to the power of 100)
-Math.pow(6, 100); // 6.533186235000709e+77
+Math.pow(5, 100);  // 7.888609052210118e+69  (5 to the power of 100)
+Math.pow(6, 100);  // 6.533186235000709e+77
 Math.pow(6, 1000); // Infinity
 ```
 
