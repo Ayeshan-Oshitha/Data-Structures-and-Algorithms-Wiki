@@ -78,7 +78,7 @@ Notes on **Data Structures and Algorithms**, written in simple words.
 <details>
 <summary><b>4. Data Structures: Arrays</b></summary>
 
-📁 [004-Data-Structures-Arrays](004-Data-Structures-Arrays/)
+📁 [004-Data-Structures-Arrays](004-Data-Structures-Arrays/) · 💻 [Code](004-Data-Structures-Arrays/code/)
 
 - [Arrays Introduction](004-Data-Structures-Arrays/01-Arrays-Introduction.md)
   - [Arrays Introduction](004-Data-Structures-Arrays/01-Arrays-Introduction.md#arrays-introduction-1)
@@ -88,7 +88,6 @@ Notes on **Data Structures and Algorithms**, written in simple words.
 - [Classes In JavaScript](004-Data-Structures-Arrays/03-Classes-In-JavaScript.md)
   - [Classes In JavaScript](004-Data-Structures-Arrays/03-Classes-In-JavaScript.md#classes-in-javascript-1)
 - [Implementing An Array](004-Data-Structures-Arrays/04-Implementing-An-Array.md)
-  - [Quick Note: Upcoming Video](004-Data-Structures-Arrays/04-Implementing-An-Array.md#quick-note-upcoming-video)
   - [Implementing An Array](004-Data-Structures-Arrays/04-Implementing-An-Array.md#implementing-an-array-1)
 - [Reverse A String](004-Data-Structures-Arrays/05-Reverse-A-String.md)
   - [Strings and Arrays](004-Data-Structures-Arrays/05-Reverse-A-String.md#strings-and-arrays)
@@ -98,7 +97,6 @@ Notes on **Data Structures and Algorithms**, written in simple words.
   - [Exercise: Merge Sorted Arrays](004-Data-Structures-Arrays/06-Merge-Sorted-Arrays.md#exercise-merge-sorted-arrays)
   - [Solution: Merge Sorted Arrays](004-Data-Structures-Arrays/06-Merge-Sorted-Arrays.md#solution-merge-sorted-arrays)
 - [Arrays Review](004-Data-Structures-Arrays/07-Arrays-Review.md)
-  - [Interview Questions: Arrays](004-Data-Structures-Arrays/07-Arrays-Review.md#interview-questions-arrays)
   - [Arrays Review](004-Data-Structures-Arrays/07-Arrays-Review.md#arrays-review-1)
 
 </details>
