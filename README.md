@@ -98,6 +98,10 @@ Notes on **Data Structures and Algorithms**, written in simple words.
   - [Solution: Merge Sorted Arrays](004-Data-Structures-Arrays/06-Merge-Sorted-Arrays.md#solution-merge-sorted-arrays)
 - [Arrays Review](004-Data-Structures-Arrays/07-Arrays-Review.md)
   - [Arrays Review](004-Data-Structures-Arrays/07-Arrays-Review.md#arrays-review-1)
+- [Arrays - Language Guide](004-Data-Structures-Arrays/Arrays-Language-Guide.md)
+  - [Names in Each Language](004-Data-Structures-Arrays/Arrays-Language-Guide.md#names-in-each-language)
+  - [Common Actions](004-Data-Structures-Arrays/Arrays-Language-Guide.md#common-actions)
+  - [Implementing An Array](004-Data-Structures-Arrays/Arrays-Language-Guide.md#implementing-an-array)
 
 </details>
 
