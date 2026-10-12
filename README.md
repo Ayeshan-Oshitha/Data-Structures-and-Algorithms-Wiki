@@ -100,3 +100,34 @@ Notes on **Data Structures and Algorithms**, written in simple words.
   - [Arrays Review](004-Data-Structures-Arrays/07-Arrays-Review.md#arrays-review-1)
 
 </details>
+
+<details>
+<summary><b>5. Data Structures: Hash Tables</b></summary>
+
+📁 [005-Data-Structures-Hash-Tables](005-Data-Structures-Hash-Tables/) · 💻 [Code](005-Data-Structures-Hash-Tables/code/)
+
+- [Hash Tables Introduction](005-Data-Structures-Hash-Tables/01-Hash-Tables-Introduction.md)
+  - [Hash Tables Introduction](005-Data-Structures-Hash-Tables/01-Hash-Tables-Introduction.md#hash-tables-introduction-1)
+- [Hash Function](005-Data-Structures-Hash-Tables/02-Hash-Function.md)
+  - [Hash Function](005-Data-Structures-Hash-Tables/02-Hash-Function.md#hash-function-1)
+- [Hash Collisions](005-Data-Structures-Hash-Tables/03-Hash-Collisions.md)
+  - [Hash Collisions](005-Data-Structures-Hash-Tables/03-Hash-Collisions.md#hash-collisions-1)
+- [Hash Tables In Different Languages](005-Data-Structures-Hash-Tables/04-Hash-Tables-In-Different-Languages.md)
+  - [Hash Tables In Different Languages](005-Data-Structures-Hash-Tables/04-Hash-Tables-In-Different-Languages.md#hash-tables-in-different-languages-1)
+- [Implement A Hash Table](005-Data-Structures-Hash-Tables/05-Implement-A-Hash-Table.md)
+  - [Exercise: Implement A Hash Table](005-Data-Structures-Hash-Tables/05-Implement-A-Hash-Table.md#exercise-implement-a-hash-table)
+  - [Solution: Implement A Hash Table](005-Data-Structures-Hash-Tables/05-Implement-A-Hash-Table.md#solution-implement-a-hash-table)
+- [keys()](005-Data-Structures-Hash-Tables/06-keys.md)
+  - [keys()](005-Data-Structures-Hash-Tables/06-keys.md#keys-1)
+  - [Extra: keys() Without Collision](005-Data-Structures-Hash-Tables/06-keys.md#extra-keys-without-collision)
+- [Hash Tables VS Arrays](005-Data-Structures-Hash-Tables/07-Hash-Tables-VS-Arrays.md)
+  - [Hash Tables VS Arrays](005-Data-Structures-Hash-Tables/07-Hash-Tables-VS-Arrays.md#hash-tables-vs-arrays-1)
+- [First Recurring Character](005-Data-Structures-Hash-Tables/08-First-Recurring-Character.md)
+  - [Exercise: First Recurring Character](005-Data-Structures-Hash-Tables/08-First-Recurring-Character.md#exercise-first-recurring-character)
+  - [Solution: First Recurring Character](005-Data-Structures-Hash-Tables/08-First-Recurring-Character.md#solution-first-recurring-character)
+- [Interesting Tidbit: Python Dictionaries](005-Data-Structures-Hash-Tables/09-Python-Dictionaries.md)
+  - [Interesting Tidbit: Python Dictionaries](005-Data-Structures-Hash-Tables/09-Python-Dictionaries.md#interesting-tidbit-python-dictionaries-1)
+- [Hash Tables Review](005-Data-Structures-Hash-Tables/10-Hash-Tables-Review.md)
+  - [Hash Tables Review](005-Data-Structures-Hash-Tables/10-Hash-Tables-Review.md#hash-tables-review-1)
+
+</details>
