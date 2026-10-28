@@ -130,18 +130,19 @@ Notes on **Data Structures and Algorithms**, written in simple words.
 - [Hash Tables Review](005-Data-Structures-Hash-Tables/07-Hash-Tables-Review.md)
   - [Interesting Tidbit: Python Dictionaries](005-Data-Structures-Hash-Tables/07-Hash-Tables-Review.md#interesting-tidbit-python-dictionaries)
   - [Hash Tables Review](005-Data-Structures-Hash-Tables/07-Hash-Tables-Review.md#hash-tables-review-1)
+- [Hash Tables - Language Guide](005-Data-Structures-Hash-Tables/Hash-Tables-Language-Guide.md)
 
 </details>
 
 <details>
 <summary><b>6. Data Structures: Linked Lists</b></summary>
 
-📁 [006-Data-Structures-Linked-Lists](006-Data-Structures-Linked-Lists/)
+📁 [006-Data-Structures-Linked-Lists](006-Data-Structures-Linked-Lists/) · 💻 [Code](006-Data-Structures-Linked-Lists/code/)
 
 - [Linked Lists Introduction](006-Data-Structures-Linked-Lists/01-Linked-Lists-Introduction.md)
   - [Linked Lists Introduction](006-Data-Structures-Linked-Lists/01-Linked-Lists-Introduction.md#linked-lists-introduction-1)
   - [What Is A Linked List?](006-Data-Structures-Linked-Lists/01-Linked-Lists-Introduction.md#what-is-a-linked-list)
-  - [Exercise: Imposter Syndrome](006-Data-Structures-Linked-Lists/01-Linked-Lists-Introduction.md#exercise-imposter-syndrome)
+  - [Extra: Imposter Syndrome](006-Data-Structures-Linked-Lists/01-Linked-Lists-Introduction.md#extra-imposter-syndrome)
 - [Why Linked Lists?](006-Data-Structures-Linked-Lists/02-Why-Linked-Lists.md)
   - [Exercise: Why Linked Lists?](006-Data-Structures-Linked-Lists/02-Why-Linked-Lists.md#exercise-why-linked-lists)
   - [Solution: Why Linked Lists?](006-Data-Structures-Linked-Lists/02-Why-Linked-Lists.md#solution-why-linked-lists)
@@ -151,20 +152,19 @@ Notes on **Data Structures and Algorithms**, written in simple words.
   - [Solution: append()](006-Data-Structures-Linked-Lists/03-Our-First-Linked-List.md#solution-append)
   - [Solution: prepend()](006-Data-Structures-Linked-Lists/03-Our-First-Linked-List.md#solution-prepend)
   - [Node Class](006-Data-Structures-Linked-Lists/03-Our-First-Linked-List.md#node-class)
-- [Insert And Remove](006-Data-Structures-Linked-Lists/04-Insert-And-Remove.md)
-  - [insert()](006-Data-Structures-Linked-Lists/04-Insert-And-Remove.md#insert)
-  - [Quick Note: Upcoming Video](006-Data-Structures-Linked-Lists/04-Insert-And-Remove.md#quick-note-upcoming-video)
-  - [Solution: insert()](006-Data-Structures-Linked-Lists/04-Insert-And-Remove.md#solution-insert)
-  - [Solution: remove()](006-Data-Structures-Linked-Lists/04-Insert-And-Remove.md#solution-remove)
-- [Doubly Linked Lists](006-Data-Structures-Linked-Lists/05-Doubly-Linked-Lists.md)
-  - [Doubly Linked Lists](006-Data-Structures-Linked-Lists/05-Doubly-Linked-Lists.md#doubly-linked-lists-1)
-  - [Exercise: Doubly Linked Lists](006-Data-Structures-Linked-Lists/05-Doubly-Linked-Lists.md#exercise-doubly-linked-lists)
-  - [Solution: Doubly Linked Lists](006-Data-Structures-Linked-Lists/05-Doubly-Linked-Lists.md#solution-doubly-linked-lists)
-  - [Singly VS Doubly Linked Lists](006-Data-Structures-Linked-Lists/05-Doubly-Linked-Lists.md#singly-vs-doubly-linked-lists)
-- [reverse()](006-Data-Structures-Linked-Lists/06-Reverse.md)
-  - [Exercise: reverse()](006-Data-Structures-Linked-Lists/06-Reverse.md#exercise-reverse)
-  - [Solution: reverse()](006-Data-Structures-Linked-Lists/06-Reverse.md#solution-reverse)
-- [Linked Lists Review](006-Data-Structures-Linked-Lists/07-Linked-Lists-Review.md)
-  - [Linked Lists Review](006-Data-Structures-Linked-Lists/07-Linked-Lists-Review.md#linked-lists-review-1)
+  - [insert()](006-Data-Structures-Linked-Lists/03-Our-First-Linked-List.md#insert)
+  - [Quick Note: Upcoming Video](006-Data-Structures-Linked-Lists/03-Our-First-Linked-List.md#quick-note-upcoming-video)
+  - [Solution: insert()](006-Data-Structures-Linked-Lists/03-Our-First-Linked-List.md#solution-insert)
+  - [Solution: remove()](006-Data-Structures-Linked-Lists/03-Our-First-Linked-List.md#solution-remove)
+- [Doubly Linked Lists](006-Data-Structures-Linked-Lists/04-Doubly-Linked-Lists.md)
+  - [Doubly Linked Lists](006-Data-Structures-Linked-Lists/04-Doubly-Linked-Lists.md#doubly-linked-lists-1)
+  - [Exercise: Doubly Linked Lists](006-Data-Structures-Linked-Lists/04-Doubly-Linked-Lists.md#exercise-doubly-linked-lists)
+  - [Solution: Doubly Linked Lists](006-Data-Structures-Linked-Lists/04-Doubly-Linked-Lists.md#solution-doubly-linked-lists)
+  - [Singly VS Doubly Linked Lists](006-Data-Structures-Linked-Lists/04-Doubly-Linked-Lists.md#singly-vs-doubly-linked-lists)
+- [reverse()](006-Data-Structures-Linked-Lists/05-Reverse.md)
+  - [Exercise: reverse()](006-Data-Structures-Linked-Lists/05-Reverse.md#exercise-reverse)
+  - [Solution: reverse()](006-Data-Structures-Linked-Lists/05-Reverse.md#solution-reverse)
+- [Linked Lists Review](006-Data-Structures-Linked-Lists/06-Linked-Lists-Review.md)
+  - [Linked Lists Review](006-Data-Structures-Linked-Lists/06-Linked-Lists-Review.md#linked-lists-review-1)
 
 </details>
