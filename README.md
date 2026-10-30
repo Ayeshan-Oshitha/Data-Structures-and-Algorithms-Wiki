@@ -166,5 +166,7 @@ Notes on **Data Structures and Algorithms**, written in simple words.
   - [Solution: reverse()](006-Linked-Lists/05-Reverse.md#solution-reverse)
 - [Linked Lists Review](006-Linked-Lists/06-Linked-Lists-Review.md)
   - [Linked Lists Review](006-Linked-Lists/06-Linked-Lists-Review.md#linked-lists-review-1)
+- [Visualizing A Linked List](006-Linked-Lists/Visualizing-A-Linked-List.md)
+- [Linked Lists - Language Guide](006-Linked-Lists/Linked-Lists-Language-Guide.md)
 
 </details>
