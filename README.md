@@ -170,3 +170,31 @@ Notes on **Data Structures and Algorithms**, written in simple words.
 - [Linked Lists - Language Guide](006-Linked-Lists/Linked-Lists-Language-Guide.md)
 
 </details>
+
+<details>
+<summary><b>7. Stacks And Queues</b></summary>
+
+📁 [007-Stacks-And-Queues](007-Stacks-And-Queues/)
+
+- [Stacks And Queues Introduction](007-Stacks-And-Queues/01-Stacks-And-Queues-Introduction.md)
+  - [Stacks And Queues Introduction](007-Stacks-And-Queues/01-Stacks-And-Queues-Introduction.md#stacks-and-queues-introduction-1)
+  - [Stacks](007-Stacks-And-Queues/01-Stacks-And-Queues-Introduction.md#stacks)
+  - [Queues](007-Stacks-And-Queues/01-Stacks-And-Queues-Introduction.md#queues)
+  - [Stacks VS Queues](007-Stacks-And-Queues/01-Stacks-And-Queues-Introduction.md#stacks-vs-queues)
+- [How JavaScript Works](007-Stacks-And-Queues/02-How-JavaScript-Works.md)
+  - [Quick Note: Upcoming Video](007-Stacks-And-Queues/02-How-JavaScript-Works.md#quick-note-upcoming-video)
+  - [Optional: How JavaScript Works](007-Stacks-And-Queues/02-How-JavaScript-Works.md#optional-how-javascript-works)
+- [Stack Implementation](007-Stacks-And-Queues/03-Stack-Implementation.md)
+  - [Exercise: Stack Implementation (Linked Lists)](007-Stacks-And-Queues/03-Stack-Implementation.md#exercise-stack-implementation-linked-lists)
+  - [Solution: Stack Implementation (Linked Lists)](007-Stacks-And-Queues/03-Stack-Implementation.md#solution-stack-implementation-linked-lists)
+  - [Exercise: Stack Implementation (Array)](007-Stacks-And-Queues/03-Stack-Implementation.md#exercise-stack-implementation-array)
+  - [Solution: Stack Implementation (Array)](007-Stacks-And-Queues/03-Stack-Implementation.md#solution-stack-implementation-array)
+- [Queue Implementation](007-Stacks-And-Queues/04-Queue-Implementation.md)
+  - [Exercise: Queue Implementation](007-Stacks-And-Queues/04-Queue-Implementation.md#exercise-queue-implementation)
+  - [Solution: Queue Implementation](007-Stacks-And-Queues/04-Queue-Implementation.md#solution-queue-implementation)
+- [Queues Using Stacks](007-Stacks-And-Queues/05-Queues-Using-Stacks.md)
+  - [Queues Using Stacks](007-Stacks-And-Queues/05-Queues-Using-Stacks.md#queues-using-stacks-1)
+- [Stacks And Queues Review](007-Stacks-And-Queues/06-Stacks-And-Queues-Review.md)
+  - [Stacks And Queues Review](007-Stacks-And-Queues/06-Stacks-And-Queues-Review.md#stacks-and-queues-review-1)
+
+</details>
