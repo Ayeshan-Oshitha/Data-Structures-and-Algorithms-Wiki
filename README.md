@@ -174,7 +174,7 @@ Notes on **Data Structures and Algorithms**, written in simple words.
 <details>
 <summary><b>7. Stacks And Queues</b></summary>
 
-📁 [007-Stacks-And-Queues](007-Stacks-And-Queues/)
+📁 [007-Stacks-And-Queues](007-Stacks-And-Queues/) · 💻 [Code](007-Stacks-And-Queues/code/)
 
 - [Stacks And Queues Introduction](007-Stacks-And-Queues/01-Stacks-And-Queues-Introduction.md)
   - [Stacks And Queues Introduction](007-Stacks-And-Queues/01-Stacks-And-Queues-Introduction.md#stacks-and-queues-introduction-1)
