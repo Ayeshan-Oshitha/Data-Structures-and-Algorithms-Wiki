@@ -196,5 +196,6 @@ Notes on **Data Structures and Algorithms**, written in simple words.
   - [Queues Using Stacks](007-Stacks-And-Queues/05-Queues-Using-Stacks.md#queues-using-stacks-1)
 - [Stacks And Queues Review](007-Stacks-And-Queues/06-Stacks-And-Queues-Review.md)
   - [Stacks And Queues Review](007-Stacks-And-Queues/06-Stacks-And-Queues-Review.md#stacks-and-queues-review-1)
+- [Stacks And Queues - Language Guide](007-Stacks-And-Queues/Stacks-And-Queues-Language-Guide.md)
 
 </details>
