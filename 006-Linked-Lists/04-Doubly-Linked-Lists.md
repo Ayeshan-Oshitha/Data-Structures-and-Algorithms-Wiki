@@ -17,16 +17,13 @@
 
 - More **memory**: every node stores an extra pointer.
 
-| Action         | Singly | Doubly                  |
-| -------------- | ------ | ----------------------- |
-| Walk backwards | ❌     | ✅                       |
+| Action         | Singly | Doubly                        |
+| -------------- | ------ | ----------------------------- |
+| Walk backwards | ❌     | ✅                            |
 | Lookup         | O(n)   | O(n) (≈ n/2, from either end) |
-| Memory         | Less   | More (extra `prev`)     |
+| Memory         | Less   | More (extra `prev`)           |
 
 > **Key idea:** A doubly linked list links both ways (`next` and `prev`), so you can go forwards and backwards, at the cost of more memory.
-
-## Exercise: Doubly Linked Lists
-
 
 ## Solution: Doubly Linked Lists
 
@@ -121,19 +118,18 @@ linkedList.remove(2);         // [2, 100, 10, 13]
 
 👉 Code file: [code/doubly-linked-list.js](code/doubly-linked-list.js)
 
-
 ## Singly VS Doubly Linked Lists
 
-|               | Singly                                                  | Doubly                                                        |
-| ------------- | ------------------------------------------------------- | ------------------------------------------------------------- |
-| **Good**      | Simple to build                                         | Walk both ways (front → back, back → front)                   |
-|               | Less memory (no `previous`)                             | Delete a previous node without walking from the head          |
-|               | Insert / delete a bit faster (fewer pointers to update) |                                                               |
-| **Bad**       | Can't walk backwards                                    | More complex to build                                         |
-|               | Lose `this.head` → the whole list is lost in memory     | More memory (extra `previous`)                                |
-|               |                                                         | Insert / delete need extra steps (update `previous` too)      |
-| **Use when**  | Memory is limited or expensive                          | Memory isn't a big problem                                    |
-|               | You mostly insert / delete (especially at the start), not search | You need good searching, including backwards        |
+|              | Singly                                                           | Doubly                                                   |
+| ------------ | ---------------------------------------------------------------- | -------------------------------------------------------- |
+| **Good**     | Simple to build                                                  | Walk both ways (front → back, back → front)              |
+|              | Less memory (no `previous`)                                      | Delete a previous node without walking from the head     |
+|              | Insert / delete a bit faster (fewer pointers to update)          |                                                          |
+| **Bad**      | Can't walk backwards                                             | More complex to build                                    |
+|              | Lose `this.head` → the whole list is lost in memory              | More memory (extra `previous`)                           |
+|              |                                                                  | Insert / delete need extra steps (update `previous` too) |
+| **Use when** | Memory is limited or expensive                                   | Memory isn't a big problem                               |
+|              | You mostly insert / delete (especially at the start), not search | You need good searching, including backwards             |
 
 - **Interviews:** you'll mostly see **singly** linked lists. Doubly usually comes up only as a "what's the difference?" question.
 

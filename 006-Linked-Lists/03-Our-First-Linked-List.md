@@ -109,7 +109,6 @@ myLinkedList.prepend(1);
 
 👉 Visual guide: [Visualizing A Linked List](Visualizing-A-Linked-List.md#adding-at-the-start-prepend)
 
-
 ## Node Class
 
 - `append` and `prepend` both repeat the same `{ value, next: null }` code.
@@ -129,13 +128,6 @@ const newNode = new Node(value);
 
 - Classes working with other classes = normal **object-oriented programming**.
 - The lecture keeps the plain object `{ value, next }`, because it's easier to read if you're new to classes. Both work the same.
-
-
-## insert()
-
-
-## Quick Note: Upcoming Video
-
 
 ## Solution: insert()
 

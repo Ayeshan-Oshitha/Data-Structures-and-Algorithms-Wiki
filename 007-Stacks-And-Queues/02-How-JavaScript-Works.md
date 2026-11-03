@@ -1,8 +1,5 @@
 # How JavaScript Works
 
-## Quick Note: Upcoming Video
-
-
 ## Optional: How JavaScript Works
 
 This lecture shows **stacks and queues in real life**: the JavaScript engine uses a **stack** to run your code and a **queue** to handle tasks that take time. It helps you answer common interview questions like:
@@ -124,10 +121,10 @@ console.log("3");
 
 The engine alone isn't enough. The browser gives a **runtime environment** with extra parts around the engine:
 
-| Part               | What it does                                                                                   |
-| ------------------ | ---------------------------------------------------------------------------------------------- |
-| **Web APIs**       | Tools the **browser** gives us, not part of JavaScript itself: DOM, AJAX / fetch, `setTimeout`. |
-| **Callback Queue** | A **queue** (FIFO) where finished callbacks wait their turn.                                   |
+| Part               | What it does                                                                                                |
+| ------------------ | ----------------------------------------------------------------------------------------------------------- |
+| **Web APIs**       | Tools the **browser** gives us, not part of JavaScript itself: DOM, AJAX / fetch, `setTimeout`.             |
+| **Callback Queue** | A **queue** (FIFO) where finished callbacks wait their turn.                                                |
 | **Event Loop**     | Keeps checking: "Is the call stack empty?" If yes, it moves the first callback from the queue to the stack. |
 
 <img src="../assets/section-07/js-runtime.png" alt="JavaScript runtime environment: the JS engine (memory heap and call stack) hands setTimeout to the Web APIs. When done, the callback waits in the callback queue. The event loop moves it to the call stack when the stack is empty" width="900">
@@ -175,9 +172,9 @@ The callback waits. Every time a click happens, it goes through the callback que
 
 ### Where Stacks And Queues Appear
 
-| Part           | Data structure | Why                                                          |
-| -------------- | -------------- | ------------------------------------------------------------ |
-| Call Stack     | **Stack** (LIFO) | The last function called is the first to finish.            |
-| Callback Queue | **Queue** (FIFO) | The first callback ready is the first to run.                |
+| Part           | Data structure   | Why                                              |
+| -------------- | ---------------- | ------------------------------------------------ |
+| Call Stack     | **Stack** (LIFO) | The last function called is the first to finish. |
+| Callback Queue | **Queue** (FIFO) | The first callback ready is the first to run.    |
 
 > **Key idea:** JavaScript is single threaded (one call stack, one thing at a time) but non-blocking. Slow tasks are handed to Web APIs, their callbacks wait in the callback queue, and the event loop moves them to the call stack only when it's empty.

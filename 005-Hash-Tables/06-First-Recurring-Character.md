@@ -1,8 +1,5 @@
 # First Recurring Character
 
-## Exercise: First Recurring Character
-
-
 ## Solution: First Recurring Character
 
 **1. Naive: nested loops**
@@ -52,12 +49,12 @@ function firstRecurringCharacter2(input: number[]): number | undefined {
 
 **What `map[input[i]]` does (read inside out):**
 
-| Part | Example (`i = 3`) | Gives |
-| --- | --- | --- |
-| `input[i]` | `input[3]` | `2` (the current item) |
-| `map[input[i]]` | `map[2]` | `true` if the object already has the key `2`, `undefined` if not |
+| Part                          | Example (`i = 3`)    | Gives                                                               |
+| ----------------------------- | -------------------- | ------------------------------------------------------------------- |
+| `input[i]`                    | `input[3]`           | `2` (the current item)                                              |
+| `map[input[i]]`               | `map[2]`             | `true` if the object already has the key `2`, `undefined` if not    |
 | `map[input[i]] !== undefined` | `true !== undefined` | `true` → the object already has the key `2` → `return input[i]` (2) |
-| `map[input[i]] = true` | `map[2] = true` | adds key `2` to the map |
+| `map[input[i]] = true`        | `map[2] = true`      | adds key `2` to the map                                             |
 
 **3. My solution: hash table (Set)**
 

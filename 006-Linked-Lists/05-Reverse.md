@@ -1,8 +1,5 @@
 # reverse()
 
-## Exercise: reverse()
-
-
 ## Solution: reverse()
 
 <!-- prettier-ignore -->

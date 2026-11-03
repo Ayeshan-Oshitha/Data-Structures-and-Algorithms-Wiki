@@ -199,3 +199,37 @@ Notes on **Data Structures and Algorithms**, written in simple words.
 - [Stacks And Queues - Language Guide](007-Stacks-And-Queues/Stacks-And-Queues-Language-Guide.md)
 
 </details>
+
+<details>
+<summary><b>8. Trees</b></summary>
+
+📁 [008-Trees](008-Trees/)
+
+- [Trees Introduction](008-Trees/01-Trees-Introduction.md)
+  - [Trees Introduction](008-Trees/01-Trees-Introduction.md#trees-introduction-1)
+- [Binary Trees](008-Trees/02-Binary-Trees.md)
+  - [Binary Trees](008-Trees/02-Binary-Trees.md#binary-trees-1)
+  - [O(log n)](008-Trees/02-Binary-Trees.md#olog-n)
+- [Binary Search Trees](008-Trees/03-Binary-Search-Trees.md)
+  - [Binary Search Trees](008-Trees/03-Binary-Search-Trees.md#binary-search-trees-1)
+  - [Balanced VS Unbalanced BST](008-Trees/03-Binary-Search-Trees.md#balanced-vs-unbalanced-bst)
+  - [BST Pros and Cons](008-Trees/03-Binary-Search-Trees.md#bst-pros-and-cons)
+- [Implement A Binary Search Tree](008-Trees/04-Implement-A-Binary-Search-Tree.md)
+  - [Exercise: Binary Search Tree](008-Trees/04-Implement-A-Binary-Search-Tree.md#exercise-binary-search-tree)
+  - [Solution: insert()](008-Trees/04-Implement-A-Binary-Search-Tree.md#solution-insert)
+  - [Solution: lookup()](008-Trees/04-Implement-A-Binary-Search-Tree.md#solution-lookup)
+  - [Extra Exercise: remove()](008-Trees/04-Implement-A-Binary-Search-Tree.md#extra-exercise-remove)
+  - [Solution: remove()](008-Trees/04-Implement-A-Binary-Search-Tree.md#solution-remove)
+- [AVL And Red Black Trees](008-Trees/05-AVL-And-Red-Black-Trees.md)
+  - [AVL Trees + Red Black Trees](008-Trees/05-AVL-And-Red-Black-Trees.md#avl-trees--red-black-trees)
+  - [Resources: AVL Trees + Red Black Trees](008-Trees/05-AVL-And-Red-Black-Trees.md#resources-avl-trees--red-black-trees)
+- [Binary Heaps](008-Trees/06-Binary-Heaps.md)
+  - [Binary Heaps](008-Trees/06-Binary-Heaps.md#binary-heaps-1)
+  - [Quick Note on Heaps](008-Trees/06-Binary-Heaps.md#quick-note-on-heaps)
+  - [Priority Queue](008-Trees/06-Binary-Heaps.md#priority-queue)
+- [Trie](008-Trees/07-Trie.md)
+  - [Trie](008-Trees/07-Trie.md#trie-1)
+- [Tree Review](008-Trees/08-Tree-Review.md)
+  - [Tree Review](008-Trees/08-Tree-Review.md#tree-review-1)
+
+</details>
