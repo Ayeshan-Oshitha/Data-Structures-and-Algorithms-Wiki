@@ -203,7 +203,7 @@ Notes on **Data Structures and Algorithms**, written in simple words.
 <details>
 <summary><b>8. Trees</b></summary>
 
-📁 [008-Trees](008-Trees/)
+📁 [008-Trees](008-Trees/) · 💻 [Code](008-Trees/code/)
 
 - [Trees Introduction](008-Trees/01-Trees-Introduction.md)
   - [Trees Introduction](008-Trees/01-Trees-Introduction.md#trees-introduction-1)
