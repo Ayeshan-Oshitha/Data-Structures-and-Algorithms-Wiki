@@ -167,82 +167,118 @@ lookup(value) {
 
 ## Solution: remove()
 
-- **New here:** `parentNode` keeps track of the node above `currentNode`, so we can re-link the nodes after removing one.
 - **Interviews:** this is hard, and it is rarely needed. Being able to do `insert` and `lookup` is what matters.
+- Both versions below follow the same rules: no children, 1 child, or 2 children.
 
-| Option | The node to remove has | Who takes its place |
-| ------ | ---------------------- | ------------------- |
-| 1      | No right child         | Its left child (or nothing) |
-| 2      | A right child with no left child | Its right child |
-| 3      | A right child with a left child  | The leftmost node of its right side (the inorder successor) |
+**Version 1: with a loop**
+
+- `parentNode` keeps track of the node above `currentNode`, so we can re-link the nodes after removing one.
+- **2 children:** copy the inorder successor's value, then remove the successor node instead. It never has a left child, so it is an easier case.
+- **Steps 3 and 4 handle all three cases.** Step 2 only runs for 2 children, and it just changes which node gets removed.
 
 <!-- prettier-ignore -->
 ```js
 remove(value) {
-  if (this.root === null) {
-    return false;                                 // empty tree: nothing to remove
-  }
+  let parentNode = null;
   let currentNode = this.root;
-  let parentNode = null;                          // we need the parent to re-link the nodes
 
-  while (currentNode) {
+  // 1. Find the node and its parent
+  while (currentNode !== null && currentNode.value !== value) {
+    parentNode = currentNode;
     if (value < currentNode.value) {
-      parentNode = currentNode;
-      currentNode = currentNode.left;             // smaller → go left
-    } else if (value > currentNode.value) {
-      parentNode = currentNode;
-      currentNode = currentNode.right;            // bigger → go right
-    } else if (currentNode.value === value) {
-      // We found the node to remove
-
-      // Option 1: no right child → the left child takes its place
-      if (currentNode.right === null) {
-        if (parentNode === null) {
-          this.root = currentNode.left;           // removing the root
-        } else if (currentNode.value < parentNode.value) {
-          parentNode.left = currentNode.left;     // node was on the parent's left
-        } else if (currentNode.value > parentNode.value) {
-          parentNode.right = currentNode.left;    // node was on the parent's right
-        }
-
-      // Option 2: right child has no left child → the right child takes its place
-      } else if (currentNode.right.left === null) {
-        currentNode.right.left = currentNode.left; // right child keeps the node's left side
-        if (parentNode === null) {
-          this.root = currentNode.right;          // removing the root
-        } else if (currentNode.value < parentNode.value) {
-          parentNode.left = currentNode.right;
-        } else if (currentNode.value > parentNode.value) {
-          parentNode.right = currentNode.right;
-        }
-
-      // Option 3: right child has a left child → the leftmost node takes its place
-      } else {
-        // Find the leftmost node of the right side (smallest value there)
-        let leftmost = currentNode.right.left;
-        let leftmostParent = currentNode.right;
-        while (leftmost.left !== null) {
-          leftmostParent = leftmost;
-          leftmost = leftmost.left;
-        }
-
-        leftmostParent.left = leftmost.right;     // parent adopts leftmost's right side
-        leftmost.left = currentNode.left;         // leftmost takes over the node's children
-        leftmost.right = currentNode.right;
-
-        if (parentNode === null) {
-          this.root = leftmost;                   // removing the root
-        } else if (currentNode.value < parentNode.value) {
-          parentNode.left = leftmost;
-        } else if (currentNode.value > parentNode.value) {
-          parentNode.right = leftmost;
-        }
-      }
-      return true;                                // removed
+      currentNode = currentNode.left;
+    } else {
+      currentNode = currentNode.right;
     }
   }
-  return false;                                   // value is not in the tree
+  if (currentNode === null) {
+    return false;                       // empty tree, or value is not in the tree
+  }
+
+  // 2. Two children: copy the inorder successor's value here,
+  //    then remove the successor node instead
+  if (currentNode.left !== null && currentNode.right !== null) {
+    let successorParent = currentNode;
+    let successor = currentNode.right;
+    while (successor.left !== null) {
+      successorParent = successor;
+      successor = successor.left;
+    }
+    currentNode.value = successor.value;
+    parentNode = successorParent;
+    currentNode = successor;
+  }
+
+  // 3. The node now has 0 or 1 child: find that child (or null)
+  const child = currentNode.left !== null ? currentNode.left : currentNode.right;
+
+  // 4. Connect the parent to the child
+  if (parentNode === null) {
+    this.root = child;                  // removing the root
+  } else if (parentNode.left === currentNode) {
+    parentNode.left = child;
+  } else {
+    parentNode.right = child;
+  }
+  return true;
 }
 ```
 
-> **Key idea:** Find the node and its parent, choose the node that takes its place, then link the parent to that node.
+**Version 2: with recursion** (a function that calls itself)
+
+- It is shorter, and it doesn't need `parentNode`. Each call returns a node, and the parent saves it.
+- It uses more memory on deep trees, and it doesn't tell you if a node was removed.
+
+<!-- prettier-ignore -->
+```js
+remove(value) {
+  this.root = this.removeNode(this.root, value);
+}
+
+removeNode(node, value) {
+  if (node === null) {
+    return null;                        // value is not in the tree
+  }
+
+  if (value < node.value) {
+    node.left = this.removeNode(node.left, value);    // go left
+  } else if (value > node.value) {
+    node.right = this.removeNode(node.right, value);  // go right
+  } else {
+    // Found it. No left child: the right child takes its place
+    // (if it has no children at all, this returns null)
+    if (node.left === null) {
+      return node.right;
+    }
+    // Only a left child: the left child takes its place
+    if (node.right === null) {
+      return node.left;
+    }
+
+    // 2 children: find the inorder successor
+    let successor = node.right;
+    while (successor.left !== null) {
+      successor = successor.left;
+    }
+    node.value = successor.value;       // copy its value here
+    node.right = this.removeNode(node.right, successor.value); // remove the old one
+  }
+  return node;                          // give this node back to its parent
+}
+```
+
+---
+
+**Which one do these versions use?** Both use the **inorder successor** (the smallest value on the right side). They go **right once**, then **left as far as possible**:
+
+<!-- prettier-ignore -->
+```js
+let successor = currentNode.right;   // go right once
+while (successor.left !== null) {
+  successor = successor.left;        // then keep going left
+}
+```
+
+To use the **inorder predecessor** instead (the biggest value on the left side), do the opposite: go **left once**, then **right as far as possible**. Both keep the tree in the correct order.
+
+> **Key idea:** Find the node. If it has 2 children, copy its inorder successor's value and remove the successor instead. Then connect the parent to the remaining child.

@@ -222,6 +222,8 @@ Notes on **Data Structures and Algorithms**, written in simple words.
   - [Solution: remove()](008-Trees/04-Implement-A-Binary-Search-Tree.md#solution-remove)
 - [AVL And Red Black Trees](008-Trees/05-AVL-And-Red-Black-Trees.md)
   - [AVL Trees + Red Black Trees](008-Trees/05-AVL-And-Red-Black-Trees.md#avl-trees--red-black-trees)
+  - [AVL Tree Details](008-Trees/05-AVL-And-Red-Black-Trees.md#avl-tree-details)
+  - [Red Black Tree Details](008-Trees/05-AVL-And-Red-Black-Trees.md#red-black-tree-details)
   - [Resources: AVL Trees + Red Black Trees](008-Trees/05-AVL-And-Red-Black-Trees.md#resources-avl-trees--red-black-trees)
 - [Binary Heaps](008-Trees/06-Binary-Heaps.md)
   - [Binary Heaps](008-Trees/06-Binary-Heaps.md#binary-heaps-1)
