@@ -239,3 +239,25 @@ Notes on **Data Structures and Algorithms**, written in simple words.
 - [Trees - Language Guide](008-Trees/Trees-Language-Guide.md)
 
 </details>
+
+<details>
+<summary><b>9. Graphs</b></summary>
+
+📁 [009-Graphs](009-Graphs/) · 💻 [Code](009-Graphs/code/)
+
+- [Graphs Introduction](009-Graphs/01-Graphs-Introduction.md)
+  - [Graphs Introduction](009-Graphs/01-Graphs-Introduction.md#graphs-introduction-1)
+  - [Types Of Graphs](009-Graphs/01-Graphs-Introduction.md#types-of-graphs)
+  - [Exercise: Guess The Graph](009-Graphs/01-Graphs-Introduction.md#exercise-guess-the-graph)
+  - [Graph Data](009-Graphs/01-Graphs-Introduction.md#graph-data)
+- [Implement A Graph](009-Graphs/02-Implement-A-Graph.md)
+  - [Solution: Graph Implementation](009-Graphs/02-Implement-A-Graph.md#solution-graph-implementation)
+- [Graphs Review](009-Graphs/03-Graphs-Review.md)
+  - [Graphs Review](009-Graphs/03-Graphs-Review.md#graphs-review-1)
+- [Data Structures Review](009-Graphs/04-Data-Structures-Review.md)
+  - [Data Structures Review](009-Graphs/04-Data-Structures-Review.md#data-structures-review-1)
+- [What Else Is Coming Up](009-Graphs/05-What-Else-Is-Coming-Up.md)
+  - [What Else Is Coming Up?](009-Graphs/05-What-Else-Is-Coming-Up.md#what-else-is-coming-up-1)
+- [Graphs - Language Guide](009-Graphs/Graphs-Language-Guide.md)
+
+</details>
