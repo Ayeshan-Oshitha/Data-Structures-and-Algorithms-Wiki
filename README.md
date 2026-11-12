@@ -261,3 +261,28 @@ Notes on **Data Structures and Algorithms**, written in simple words.
 - [Graphs - Language Guide](009-Graphs/Graphs-Language-Guide.md)
 
 </details>
+
+<details>
+<summary><b>10. Recursion</b></summary>
+
+📁 [010-Recursion](010-Recursion/) · 💻 [Code](010-Recursion/code/)
+
+- [Recursion Introduction](010-Recursion/01-Recursion-Introduction.md)
+  - [Introduction to Algorithms](010-Recursion/01-Recursion-Introduction.md#introduction-to-algorithms)
+  - [Recursion Introduction](010-Recursion/01-Recursion-Introduction.md#recursion-introduction-1)
+  - [Stack Overflow](010-Recursion/01-Recursion-Introduction.md#stack-overflow)
+- [Anatomy Of Recursion](010-Recursion/02-Anatomy-Of-Recursion.md)
+  - [Anatomy Of Recursion](010-Recursion/02-Anatomy-Of-Recursion.md#anatomy-of-recursion-1)
+- [Factorial](010-Recursion/03-Factorial.md)
+  - [Exercise: Factorial](010-Recursion/03-Factorial.md#exercise-factorial)
+  - [Solution: Factorial](010-Recursion/03-Factorial.md#solution-factorial)
+- [Fibonacci](010-Recursion/04-Fibonacci.md)
+  - [Exercise: Fibonacci](010-Recursion/04-Fibonacci.md#exercise-fibonacci)
+  - [Solution: Fibonacci](010-Recursion/04-Fibonacci.md#solution-fibonacci)
+- [Recursive VS Iterative](010-Recursion/05-Recursive-VS-Iterative.md)
+  - [Recursive VS Iterative](010-Recursion/05-Recursive-VS-Iterative.md#recursive-vs-iterative-1)
+  - [When To Use Recursion](010-Recursion/05-Recursive-VS-Iterative.md#when-to-use-recursion)
+- [Reverse String With Recursion](010-Recursion/06-Reverse-String.md)
+  - [Exercise: Reverse String With Recursion](010-Recursion/06-Reverse-String.md#exercise-reverse-string-with-recursion)
+
+</details>
