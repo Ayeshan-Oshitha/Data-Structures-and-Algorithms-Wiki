@@ -288,5 +288,6 @@ Notes on **Data Structures and Algorithms**, written in simple words.
   - [Solution: Reverse String With Recursion](010-Recursion/06-Reverse-String.md#solution-reverse-string-with-recursion)
 - [Recursion Review](010-Recursion/07-Recursion-Review.md)
   - [Recursion Review](010-Recursion/07-Recursion-Review.md#recursion-review-1)
+- [Recursion - Language Guide](010-Recursion/Recursion-Language-Guide.md)
 
 </details>
