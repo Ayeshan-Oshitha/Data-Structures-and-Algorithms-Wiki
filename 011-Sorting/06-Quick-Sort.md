@@ -26,6 +26,13 @@
 - **Example:** an **already sorted** list with the **first or last** item as the pivot. Every split is bad, so it's very slow.
 - So **pick the pivot carefully**, based on your list.
 
+### Why an already sorted list is the worst case
+
+- With pivot = last number, `[1, 2, 3, 4, 5]` picks **5**, the biggest.
+- Every split leaves **one side empty** and the other side with everything else, so the list never splits in half.
+- Pivot 5 leaves `[1, 2, 3, 4]`, then pivot 4 leaves `[1, 2, 3]`, and so on. That's `n` levels, each comparing up to `n` numbers, so **O(n²)**.
+- **Random data** (like sports scores) is very unlikely to already be in order. The pivot is usually a middle-ish number, so it splits well and stays **O(n log n)**.
+
 ### Quick sort vs merge sort
 
 - Quick sort and merge sort are the **most used** sorting algorithms.
@@ -71,6 +78,10 @@ quickSort([3, 7, 8, 5, 2, 1, 9, 5, 4]); // [1, 2, 3, 4, 5, 5, 7, 8, 9]
 - **`quickSort`:** after partition, it calls itself on the **left part** (`low` to `p - 1`) and the **right part** (`p + 1` to `high`).
 - **Base case:** `low < high` is false when a part has 0 or 1 items, so it stops.
 - `[a, b] = [b, a]` is a short way to **swap** 2 items in JavaScript.
+
+**How `partition` works, line by line:**
+
+<img src="../assets/section-11/partition-steps.png" alt="partition of 3, 7, 8, 5, 2, 1, 9, 5, 4 from index 0 to 8, one row per step with the code lines run and the values of i and j. Lines 1 and 2: pivot is 4, i is -1. j 0: 3 is less than 4, i becomes 0, swap with itself. j 1 to 3: 7, 8, 5 are not less than 4, skip. j 4: 2 is less, i becomes 1, swap index 1 and 4. j 5: 1 is less, i becomes 2, swap index 2 and 5. j 6 and 7: 9 and 5 skip. j 8 ends the loop. Line 6: swap index 3 and 8, so pivot 4 goes to index 3. Line 7: return 3" width="900">
 
 **Step by step, exactly as the code runs:**
 
