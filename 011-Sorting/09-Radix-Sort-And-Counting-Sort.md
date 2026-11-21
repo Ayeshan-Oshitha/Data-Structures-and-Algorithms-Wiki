@@ -47,4 +47,9 @@
 - The number of passes = the number of **digits** in the biggest number (802 has 3).
 - Keeping the order inside each group is what makes the earlier passes still count.
 
+### Animations
+
+- 👉 [Radix Sort animation (USFCA)](https://www.cs.usfca.edu/~galles/visualization/RadixSort.html)
+- 👉 [Counting Sort animation (USFCA)](https://www.cs.usfca.edu/~galles/visualization/CountingSort.html)
+
 > **Key idea:** Comparison sorts can't beat O(n log n). Counting and radix sort can, because they don't compare, but they only work on whole numbers in a small range.

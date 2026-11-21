@@ -336,3 +336,39 @@ Notes on **Data Structures and Algorithms**, written in simple words.
   - [Sorting Review](011-Sorting/11-Sorting-Review.md#sorting-review-1)
 
 </details>
+
+<details>
+<summary><b>12. Searching And Traversal</b></summary>
+
+📁 [012-Searching-And-Traversal](012-Searching-And-Traversal/) · 💻 [Code](012-Searching-And-Traversal/code/)
+
+- [Searching Introduction](012-Searching-And-Traversal/01-Searching-Introduction.md)
+  - [Searching + Traversal Introduction](012-Searching-And-Traversal/01-Searching-Introduction.md#searching--traversal-introduction)
+  - [Linear Search](012-Searching-And-Traversal/01-Searching-Introduction.md#linear-search)
+  - [Binary Search](012-Searching-And-Traversal/01-Searching-Introduction.md#binary-search)
+- [Graph And Tree Traversals](012-Searching-And-Traversal/02-Graph-And-Tree-Traversals.md)
+  - [Graph + Tree Traversals](012-Searching-And-Traversal/02-Graph-And-Tree-Traversals.md#graph--tree-traversals)
+- [BFS And DFS](012-Searching-And-Traversal/03-BFS-And-DFS.md)
+  - [BFS Introduction](012-Searching-And-Traversal/03-BFS-And-DFS.md#bfs-introduction)
+  - [DFS Introduction](012-Searching-And-Traversal/03-BFS-And-DFS.md#dfs-introduction)
+  - [BFS vs DFS](012-Searching-And-Traversal/03-BFS-And-DFS.md#bfs-vs-dfs)
+  - [Resources: BFS vs DFS](012-Searching-And-Traversal/03-BFS-And-DFS.md#resources-bfs-vs-dfs)
+  - [Exercise: BFS vs DFS](012-Searching-And-Traversal/03-BFS-And-DFS.md#exercise-bfs-vs-dfs)
+  - [Solution: BFS vs DFS](012-Searching-And-Traversal/03-BFS-And-DFS.md#solution-bfs-vs-dfs)
+- [Breadth First Search](012-Searching-And-Traversal/04-Breadth-First-Search.md)
+  - [breadthFirstSearch()](012-Searching-And-Traversal/04-Breadth-First-Search.md#breadthfirstsearch)
+  - [breadthFirstSearchRecursive()](012-Searching-And-Traversal/04-Breadth-First-Search.md#breadthfirstsearchrecursive)
+- [Depth First Search](012-Searching-And-Traversal/05-Depth-First-Search.md)
+  - [PreOrder, InOrder, PostOrder](012-Searching-And-Traversal/05-Depth-First-Search.md#preorder-inorder-postorder)
+  - [depthFirstSearch()](012-Searching-And-Traversal/05-Depth-First-Search.md#depthfirstsearch)
+  - [Optional Exercise: Validate A BST](012-Searching-And-Traversal/05-Depth-First-Search.md#optional-exercise-validate-a-bst)
+- [Graph Traversals](012-Searching-And-Traversal/06-Graph-Traversals.md)
+  - [Graph Traversals](012-Searching-And-Traversal/06-Graph-Traversals.md#graph-traversals-1)
+  - [BFS in Graphs](012-Searching-And-Traversal/06-Graph-Traversals.md#bfs-in-graphs)
+  - [DFS in Graphs](012-Searching-And-Traversal/06-Graph-Traversals.md#dfs-in-graphs)
+- [Dijkstra And Bellman-Ford](012-Searching-And-Traversal/07-Dijkstra-And-Bellman-Ford.md)
+  - [Dijkstra + Bellman-Ford Algorithms](012-Searching-And-Traversal/07-Dijkstra-And-Bellman-Ford.md#dijkstra--bellman-ford-algorithms)
+- [Searching And Traversal Review](012-Searching-And-Traversal/08-Searching-And-Traversal-Review.md)
+  - [Searching + Traversal Review](012-Searching-And-Traversal/08-Searching-And-Traversal-Review.md#searching--traversal-review)
+
+</details>
